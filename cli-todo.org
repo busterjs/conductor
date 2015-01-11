@@ -1,0 +1,31 @@
+* Flow/features in cli [0/6]
+** TODO --help: Print help
+** TODO Parse args
+*** Abort if errors
+** TODO Configure stackFilters
+** TODO Read config
+*** Abort if errors
+** TODO Run all config groups as one single run
+*** Exit code 1 if errors
+*** Exit code 0 if successful
+** TODO Run through runAnalyzer
+*** Abort if analyzer asks for it
+* Browser runner [0/8]
+** TODO Use ramp
+** TODO onSessionAbort etc - refer to session API docs
+** TODO Listen for uncaught exceptions
+** TODO beforeRun extension hook
+** TODO Don't run tests when there are 0 clients
+** TODO emit "client:connect" for every client with an objekt with {id, browser(??), toString}
+** TODO Pass options to the browser
+                    failOnNoAssertions: opt(this.options, "failOnNoAssertions", true),
+                    autoRun: opt(this.config.options, "autoRun", true),
+                    captureConsole: opt(this.options, "captureConsole", true),
+                    filters: opt(this.options, "filters", undefined)
+** TODO Cache resource sets
+* Node-runner [0/5]
+** TODO beforeRun-hook (for linting etc) -> process all groups with caching
+** TODO Resolve config
+** TODO testRun extension hook
+** TODO Require files with a friendly error
+** TODO Possibly ship slaveId on events??

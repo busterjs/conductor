@@ -1,22 +1,23 @@
 {
-    "name": "buster-conductor",
-    "version": "1.0.0",
-    "description": "Orchestrate buster",
-    "homepage": "http://busterjs.org/docs/buster-conductor",
-    "contributors": [
-        "Magnar Sveen <magnars@gmail.com>",
-        "Christian Johansen <christian@cjohansen.no> (http://cjohansen.no)"
-    ],
-    "main": "./lib/buster-conductor.js",
-    "scripts": {
-        "test": "node run-tests.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/busterjs/buster-conductor.git"
-    },
-    "devDependencies": {
-        "buster-node": "*",
-        "platform": "~1"
-    }
+  "name": "buster-conductor",
+  "version": "1.0.0",
+  "description": "Orchestrate buster",
+  "homepage": "http://busterjs.org/docs/buster-conductor",
+  "contributors": [
+    "Magnar Sveen <magnars@gmail.com>",
+    "Christian Johansen <christian@cjohansen.no> (http://cjohansen.no)"
+  ],
+  "main": "./lib/buster-conductor.js",
+  "scripts": {
+    "test": "node run-tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/busterjs/buster-conductor.git"
+  },
+  "devDependencies": {
+    "buster-node": "*",
+    "platform": "~1",
+    "when": "~3.6.4"
+  }
 }
